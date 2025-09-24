@@ -1,0 +1,8 @@
+# HRSC L3 类别清单（示例模板）
+# TODO: 将下列占位替换为你采用的 HRSC L3 类别名（更细粒度），顺序需与标注一致
+subtype_A1
+subtype_A2
+subtype_B1
+subtype_C1
+subtype_C2
+subtype_D1
