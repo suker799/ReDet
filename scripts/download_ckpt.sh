@@ -1,9 +1,14 @@
-# scripts/download_ckpt.sh
 #!/usr/bin/env bash
 set -e
-CKPT_URL="https://<your-release-or-original-link>"
-OUT="checkpoints/redet_hrsc.pth"
+
+# 使用文件ID
+FILE_ID="1vTU6OeFD6CX4zkQn7szlgL7Qc_MOZpgC"
+OUT="checkpoints/re_resnet50_c8_batch256-12933bc2.pth"
+
 mkdir -p checkpoints
-curl -L "$CKPT_URL" -o "$OUT"
-# 可选校验
-echo "<sha256sum>  $OUT" | sha256sum -c -
+
+# 安装gdown（如果尚未安装）
+pip install gdown
+
+# 使用gdown下载
+gdown "https://drive.google.com/uc?id=$FILE_ID" -O "$OUT"
