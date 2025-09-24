@@ -1,4 +1,4 @@
-# 把上面的 classes = (...) 换成你的 L3 小类全集，work_dir 改成 redet_hrsc_l3；其余保持一致即可。
+# 把上面的 classes = (...) 换成你的 L3 小类全集，work_dir 改成 redet_hrsc_l3；其余保持一致即可
 _base_ = [
     # 以官方 HRSC 配置/或 DOTA 配置为基，路径按你的仓库实际调整
     '../re_det/re50_refpn_1x_hrsc.py'
