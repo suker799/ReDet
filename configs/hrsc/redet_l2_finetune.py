@@ -1,3 +1,4 @@
+# 需要修改
 _base_ = [
     # 以官方 HRSC 配置/或 DOTA 配置为基，路径按你的仓库实际调整
     '../re_det/re50_refpn_1x_hrsc.py'
