@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 说明：HRSC 不大，上述 36 epoch 已足够；如果 val Recall 未达标，可把 EPOCHS 提到 48，再观察。
+# 说明：HRSC 不大，上述 36 epoch 已足够；如果 val Recall 未达标，可把 EPOCHS 提到 48，再观察
 set -e
 CFG=${1:-configs/hrsc/redet_l2_finetune.py}
 GPU=${GPU:-1}          # 用一张GPU即可（建议 24GB+；也可调小 batch）
